@@ -1,12 +1,20 @@
 {
   "siteTitle": "NATEMAN'S HOMEPAGE",
-  "tagline": "Welcome to my corner of the web!",
+  "browserTitle": "Nateman's Homepage",
+  "tagline": "Welcomewelcomewelcomewelcomewelcomewelcomewelcome",
   "lastUpdated": "October 2026",
   "showUnderConstruction": true,
-  "webmaster": "Nateman LLC",
-  "location": "New Jersey",
-  "email": "not available",
-  "visitorNumber": 42,
+  "ticker": "WELCOME! Thanks for stopping by! ☆ Sign the guestbook! ☆",
+  "welcomeHeading": "You forget 1000 things every day pal, make sure this ISN'T one of them.",
+  "welcomeParagraphs": [
+    "You've found my homepage! Make yourself at home, explore the links, and don't forget to bookmark this page.",
+    "This site is proudly hand-coded with plain HTML, CSS, and JavaScript. No frameworks. No fancy stuff. Just the WEB!"
+  ],
+  "importantNote": "PLEASE SIGN MY GUESTBOOK!!!",
+  "aboutParagraphs": [
+    "Hi! I'm Nateman. This is my little personal site.",
+    "I like games, computers, and making things."
+  ],
   "theme": {
     "background": "#000080",
     "text": "#ffff00",

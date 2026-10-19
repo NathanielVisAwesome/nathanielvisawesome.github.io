@@ -1,0 +1,84 @@
+/* Retro personal homepage stylesheet — most colors are set from config.json */
+:root {
+  --page-bg: #000080;
+  --page-text: #ffff00;
+  --link: #00ffff;
+  --visited: #ff66ff;
+  --panel-bg: #000066;
+  --panel-border: #ffff00;
+  --heading: #ff00ff;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background-color: var(--page-bg);
+  color: var(--page-text);
+  font-family: "Comic Sans MS", "Comic Sans", "Trebuchet MS", cursive, sans-serif;
+  font-size: 16px;
+  background-image: radial-gradient(circle, rgba(255,255,255,.13) 1px, transparent 1px);
+  background-size: 8px 8px;
+}
+a { color: var(--link); font-weight: bold; }
+a:visited { color: var(--visited); }
+a:hover { color: #fff; background: #f00; }
+.page-shell { max-width: 1000px; margin: 0 auto; padding: 12px; }
+.masthead, footer { text-align: center; }
+.masthead h1 {
+  margin: 12px 0 4px;
+  color: var(--heading);
+  font-size: clamp(2.2rem, 7vw, 4.8rem);
+  line-height: 1.05;
+  text-shadow: 3px 3px #000, 5px 5px #00ff00;
+  letter-spacing: 2px;
+}
+.tagline { font-size: 1.1rem; font-weight: bold; }
+.under-construction { display: inline-block; border: 3px dashed #ff0; padding: 5px 12px; color: #f00; background: #ff0; font-weight: 900; }
+.rainbow-rule { height: 8px; border: 1px solid white; background: linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, magenta, red); margin: 12px 0; }
+.last-updated { font-family: "Courier New", monospace; font-size: .85rem; }
+.ticker { display: block; padding: 8px; margin: 12px 0 18px; border: 2px ridge #fff; color: #00ff00; background: #000; font-weight: bold; }
+.layout { display: grid; grid-template-columns: 245px minmax(0, 1fr); gap: 16px; align-items: start; }
+.sidebar, main { min-width: 0; }
+.panel, .welcome-box {
+  background: var(--panel-bg);
+  border: 3px ridge var(--panel-border);
+  padding: 12px;
+  margin-bottom: 16px;
+  box-shadow: 4px 4px 0 rgba(0,0,0,.55);
+}
+.panel h2, .welcome-box h2 {
+  color: var(--heading);
+  text-align: center;
+  margin: 0 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px dotted var(--panel-border);
+  font-size: 1.25rem;
+}
+.panel p { line-height: 1.5; }
+#nav-links { display: grid; gap: 8px; }
+#nav-links a { display: block; padding: 6px 8px; border: 2px outset #aaa; background: #000; text-decoration: none; }
+.centered { text-align: center; }
+.counter {
+  display: inline-block; padding: 6px 10px; background: #000; color: #00ff00;
+  border: 2px inset #aaa; font-family: "Courier New", monospace; font-size: 1.5rem; letter-spacing: 3px;
+}
+.pixel-person { font-family: monospace; font-size: 2.5rem; color: #00ff00; margin: 4px; }
+.webring p { font-size: .9rem; }
+.webring a { display: inline-block; margin: 3px; font-size: .8rem; }
+.welcome-box { text-align: center; background: #000; }
+.welcome-box h2 { font-size: 1.6rem; }
+#welcome-copy { line-height: 1.6; }
+.blink { color: #ff4444; font-weight: 900; animation: blink 1s steps(2, start) infinite; }
+@keyframes blink { to { visibility: hidden; } }
+.new-badge { display: inline-block; color: #fff; background: #f00; padding: 2px 5px; font-size: .7em; transform: rotate(-4deg); }
+ul { padding-left: 24px; }
+li { margin: 8px 0; line-height: 1.45; }
+.big-link { display: inline-block; padding: 10px; border: 3px outset #ddd; background: #000; text-decoration: none; }
+footer { padding: 8px 10px 20px; font-size: .9rem; }
+footer p { margin: 8px; }
+@media (max-width: 680px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+  .sidebar .panel { margin-bottom: 0; }
+  .masthead h1 { letter-spacing: 0; }
+}

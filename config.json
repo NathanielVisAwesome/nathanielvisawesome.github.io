@@ -1,0 +1,19 @@
+{
+  "siteTitle": "NATEMAN'S HOMEPAGE",
+  "tagline": "Welcome to my corner of the web!",
+  "lastUpdated": "October 2026",
+  "showUnderConstruction": true,
+  "webmaster": "Nateman LLC",
+  "location": "New Jersey",
+  "email": "not available",
+  "visitorNumber": 42,
+  "theme": {
+    "background": "#000080",
+    "text": "#ffff00",
+    "link": "#00ffff",
+    "visited": "#ff66ff",
+    "panel": "#000066",
+    "border": "#ffff00",
+    "heading": "#ff00ff"
+  }
+}
